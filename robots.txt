@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://supercold.biz.id/sitemap.xml
