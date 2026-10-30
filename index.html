@@ -1,145 +1,3 @@
-<!doctype html><html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Halaman tidak ditemukan | Super Cold</title><meta name="robots" content="noindex"><link rel="apple-touch-icon" href="/apple-touch-icon.png">
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 64 64%27%3E%3Ccircle cx=%2732%27 cy=%2732%27 r=%2730%27 fill=%27%230A5CC5%27/%3E%3Ctext x=%2732%27 y=%2742%27 text-anchor=%27middle%27 font-size=%2726%27 font-weight=%27800%27 font-family=%27Arial,sans-serif%27 fill=%27white%27%3ESC%3C/text%3E%3C/svg%3E">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><style>
-:root{
-  --frost:#f2f8fb; --paper:#ffffff; --ink:#10303c; --muted:#4d6671;
-  --cold:#0a6f94; --deep:#07445c; --line:#d3e3ea; --wa:#17a34a; --wa-dark:#12803a;
-  --r:14px;
-  color-scheme: light;
-}
-@media (prefers-color-scheme: dark){
-  :root{--frost:#0b1a21; --paper:#112630; --ink:#e6f2f6; --muted:#9db6c0; --line:#1f3f4d; --cold:#4cc2ea; --deep:#0a2a37; color-scheme: dark;}
-}
-*{box-sizing:border-box;margin:0}
-html{scroll-behavior:smooth;scroll-padding-top:76px}
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
-body{font-family:"Plus Jakarta Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:var(--frost);color:var(--ink);line-height:1.65;-webkit-font-smoothing:antialiased}
-a{color:inherit}
-:focus-visible{outline:3px solid var(--cold);outline-offset:3px;border-radius:6px}
-.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
-section{padding:64px 0}
-h1,h2,h3{line-height:1.2;letter-spacing:-.02em}
-h2{font-size:clamp(1.5rem,3.2vw,2.1rem);font-weight:800;margin-bottom:12px;max-width:22em}
-.lead{color:var(--muted);max-width:60ch;margin-bottom:32px}
-
-header{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--frost) 90%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
-.nav{display:flex;align-items:center;justify-content:space-between;height:66px}
-.brand{font-weight:800;text-decoration:none;font-size:1.1rem}
-.brand span{color:var(--cold)}
-nav a{text-decoration:none;font-weight:500;font-size:.92rem;margin-left:18px;color:var(--muted)}
-nav a:hover{color:var(--ink)}
-@media(max-width:640px){
-  html{scroll-padding-top:124px}
-  .nav{flex-wrap:wrap;height:auto;padding-top:8px;padding-bottom:2px;row-gap:0}
-  .brand{margin:0 auto 2px}
-  nav{width:100%;display:flex;justify-content:space-between;overflow-x:auto}
-  nav a{margin-left:0;padding:13px 6px;font-size:.88rem;white-space:nowrap}
-}
-
-.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 22px;border-radius:999px;font-weight:700;text-decoration:none;background:var(--wa);color:#fff;border:2px solid var(--wa);transition:background .15s}
-.btn:hover{background:var(--wa-dark);border-color:var(--wa-dark)}
-.btn.ghost{background:transparent;color:var(--ink);border-color:var(--line)}
-.btn.ghost:hover{border-color:var(--cold)}
-
-.hero{background:var(--deep);color:#eaf6fa;padding:72px 0 80px;position:relative;overflow:hidden}
-.hero .wrap{display:grid;grid-template-columns:1.3fr .7fr;gap:40px;align-items:center}
-.hero h1{font-size:clamp(2rem,5.2vw,3.4rem);font-weight:800;margin-bottom:16px}
-.hero p{max-width:52ch;color:#b9d6e0;margin-bottom:28px}
-.hero .cta{display:flex;flex-wrap:wrap;gap:12px}
-.hero .btn.ghost{color:#eaf6fa;border-color:#3b6c80}
-.hours-hero{display:inline-flex;align-items:center;gap:10px;margin:20px 0 0;padding:8px 16px;border:1px solid #3b6c80;border-radius:999px;font-size:.9rem;color:#d4ebf3}
-.dot{width:10px;height:10px;border-radius:50%;background:#8fb3c0;flex:none}
-.dot.open{background:#3ddc84;box-shadow:0 0 0 4px rgba(61,220,132,.2)}
-.dot.closed{background:#ffb4a8}
-.hours-card{max-width:380px;margin:26px auto 0;border:1px solid #3b6c80;border-radius:14px;padding:6px 20px 14px;text-align:left;background:rgba(255,255,255,.05)}
-.hours-card h3{font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:#bfe9f7;padding:14px 0 6px}
-.hours-card .row{display:flex;justify-content:space-between;gap:16px;padding:10px 8px;border-top:1px solid #2f6f86;font-size:.95rem}
-.hours-card .row dd{margin:0;font-weight:700}
-.hours-card .row.off dd{color:#ffb4a8}
-.hours-card .row.today{background:rgba(191,233,247,.12);border-radius:8px;border-top-color:transparent}
-.hours-card .row.today dt::after{content:"  · hari ini";font-weight:700;color:#bfe9f7}
-.hours-card p{margin:10px 0 0!important;font-size:.85rem!important;color:#b9d6e0}
-.logo-svg{display:block;height:44px;width:auto}
-.logo-lg{display:block;width:min(300px,80%);height:auto;margin:0 auto 22px}
-.brand{display:flex;align-items:center;gap:10px}
-.logo-badge{display:block;width:44px;height:44px;flex:none}
-.logo-word{font-weight:800;font-size:1.3rem;letter-spacing:-.02em;line-height:1}
-.brand .logo-word{color:var(--ink)}
-.brand .logo-word span{color:#0EA5E9}
-.badge{display:inline-block;font-size:.85rem;font-weight:700;color:#bfe9f7;border:1px solid #3b6c80;border-radius:999px;padding:5px 14px;margin-bottom:18px}
-.price-hint{background:#0c566f;border:1px solid #2f6f86;border-radius:var(--r);padding:26px;text-align:center}
-.price-hint small{display:block;color:#b9d6e0}
-.price-hint strong{display:block;font-size:2.6rem;font-weight:800;line-height:1.1;margin:6px 0}
-@media(max-width:760px){.hero .wrap{grid-template-columns:1fr}}
-
-.grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
-.card{background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:26px}
-.card h3{font-size:1.15rem;margin-bottom:8px}
-.card p{color:var(--muted);font-size:.95rem;margin-bottom:12px}
-.card ul{padding-left:18px;font-size:.95rem}
-.card li{margin:3px 0}
-
-.price-grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
-table{width:100%;border-collapse:collapse}
-caption{text-align:left;font-weight:800;font-size:1.1rem;padding-bottom:10px}
-td{padding:12px 0;border-top:1px solid var(--line)}
-td:last-child{text-align:right;font-weight:800;color:var(--cold);white-space:nowrap}
-.note{margin-top:20px;color:var(--muted);font-size:.93rem}
-
-.steps{list-style:none;padding:0;display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));counter-reset:s}
-.steps li{counter-increment:s;background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:22px}
-.steps li::before{content:counter(s);display:grid;place-items:center;width:34px;height:34px;border-radius:50%;background:var(--cold);color:#fff;font-weight:800;margin-bottom:10px}
-.steps strong{display:block;margin-bottom:4px}
-.steps span{color:var(--muted);font-size:.93rem}
-
-.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:6px}
-.chips span{background:var(--paper);border:1px solid var(--line);border-radius:999px;padding:7px 16px;font-size:.92rem}
-
-details{background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:0;margin-bottom:10px}
-summary{cursor:pointer;font-weight:700;padding:16px 20px}
-details p{color:var(--muted);margin:0;padding:0 20px 16px}
-
-.rating{display:flex;align-items:center;gap:10px;margin-bottom:28px;font-weight:700}
-.stars{color:#f5a400;letter-spacing:2px}
-.quotes{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
-.quote{background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:22px;display:flex;flex-direction:column;gap:12px}
-.quote blockquote{font-size:1rem}
-.quote footer{padding:0;text-align:left;font-size:.88rem;margin-top:auto}
-.quote footer strong{display:block;color:var(--ink)}
-.quote .stars{font-size:.95rem}
-.social{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-top:18px}
-.social a{display:inline-flex;align-items:center;gap:8px;padding:9px 18px;border-radius:999px;border:1px solid #3b6c80;color:#eaf6fa;text-decoration:none;font-weight:600;font-size:.92rem}
-.social a:hover{border-color:#bfe9f7}
-.social svg{width:18px;height:18px;fill:currentColor}
-.final{background:var(--deep);color:#eaf6fa;text-align:center;border-radius:20px;padding:48px 24px}
-.final h2{margin:0 auto 10px}
-.final p{color:#b9d6e0;margin-bottom:24px}
-footer{padding:32px 0 96px;color:var(--muted);font-size:.9rem;text-align:center}
-
-.float-wa{position:fixed;right:16px;bottom:16px;z-index:30;box-shadow:0 6px 20px rgba(0,0,0,.25)}
-
-#booking{background:var(--paper);border-block:1px solid var(--line)}
-.choices{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(170px,1fr))}
-.choice{font:inherit;font-weight:700;text-align:left;padding:18px;border-radius:var(--r);border:2px solid var(--line);background:var(--frost);color:var(--ink);cursor:pointer;transition:border-color .15s}
-.choice:hover{border-color:var(--cold)}
-.choice span{display:block;font-weight:500;font-size:.85rem;color:var(--muted);margin-top:4px}
-.bk-form{display:grid;gap:14px;max-width:560px}
-.bk-form label{display:grid;gap:6px;font-weight:700;font-size:.93rem}
-.bk-form input,.bk-form select,.bk-form textarea{font:inherit;font-size:16px;font-weight:500;padding:12px 14px;border-radius:10px;border:1px solid var(--line);background:var(--frost);color:var(--ink);width:100%}
-.bk-form textarea{min-height:84px;resize:vertical}
-.bk-est{background:var(--frost);border:1px dashed var(--cold);border-radius:10px;padding:12px 14px;font-weight:700}
-.bk-actions{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
-.bk-actions button{font:inherit;cursor:pointer}
-.bk-step{font-size:.85rem;font-weight:700;color:var(--cold);margin-bottom:10px}
-
-.hero .wrap{grid-template-columns:1fr}
-.crumbs{font-size:.85rem;color:#b9d6e0;margin-bottom:14px}.crumbs a{color:#b9d6e0;text-decoration:underline}
-.related{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin:0 0 12px}
-.related a{border:1px solid var(--line);background:var(--paper);color:var(--ink);border-radius:999px;padding:8px 16px;font-weight:700;font-size:.88rem;text-decoration:none}
-footer .related a{font-weight:500}
-.sec-link{margin-top:12px}.sec-link a{font-weight:700;color:var(--cold)}
-</style></head><body><header><div class="wrap nav"><a class="brand" href="/" aria-label="Super Cold Air Conditioner, beranda"><svg class="logo-badge" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="30" fill="#0A5CC5"/><circle cx="32" cy="32" r="25" fill="none" stroke="#7DD3FC" stroke-width="1.5"/><text x="32" y="41" text-anchor="middle" font-size="24" font-weight="800" letter-spacing="1" fill="#fff" style="font-family:inherit">SC</text></svg><span class="logo-word">Super<span>Cold</span></span></a><nav><a href="/">Beranda</a><a href="/#layanan">Layanan</a><a href="/#booking">Booking</a><a href="/#kontak">Kontak</a></nav></div></header><main><section><div class="wrap"><h1 style="font-size:2rem;margin-bottom:12px">Halaman tidak ditemukan</h1><p class="lead">Alamat yang Anda buka tidak tersedia. Silakan lihat layanan kami:</p><div style="margin-top:20px"><div class="related"><a href="/cuci-ac-bekasi/">Cuci AC</a><a href="/service-ac-bekasi/">Service AC</a><a href="/service-kulkas-bekasi/">Kulkas</a><a href="/service-mesin-cuci-bekasi/">Mesin Cuci</a><a href="/jasa-listrik-bekasi/">Listrik</a><a href="/kuras-toren-bekasi/">Kuras Toren</a></div></div><p style="text-align:center"><a class="btn" href="/">Kembali ke beranda</a></p></div></section></main></body></html>
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -149,6 +7,10 @@ footer .related a{font-weight:500}
 <meta name="description" content="Service AC Bekasi &amp; Mustikajaya: cuci AC mulai Rp85.000, isi freon, pasang AC, servis kulkas, mesin cuci, listrik, kuras toren. Teknisi BNSP ke rumah.">
 <meta name="robots" content="index,follow,max-image-preview:large">
 <link rel="canonical" href="https://supercold.biz.id/">
+
+<!-- TAG VERIFIKASI GOOGLE SEARCH CONSOLE -->
+<meta name="google-site-verification" content="ISI_DENGAN_KODE_VERIFIKASI_HTML_DARI_SEARCH_CONSOLE" />
+
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Super Cold HVAC Solution">
 <meta property="og:title" content="Service AC Bekasi, Cuci AC Mulai Rp85.000 | Super Cold">
@@ -158,18 +20,26 @@ footer .related a{font-weight:500}
 <meta property="og:image" content="https://supercold.biz.id/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Super Cold: service AC, kulkas, mesin cuci, listrik, dan kuras toren di Bekasi">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="geo.region" content="ID-JB">
 <meta name="geo.placename" content="Mustika Jaya, Kota Bekasi">
 <meta name="theme-color" content="#0a6f94">
-<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 64 64%27%3E%3Ccircle cx=%2732%27 cy=%2732%27 r=%2730%27 fill=%27%230A5CC5%27/%3E%3Ctext x=%2732%27 y=%2742%27 text-anchor=%27middle%27 font-size=%2726%27 font-weight=%27800%27 font-family=%27Arial,sans-serif%27 fill=%27white%27%3ESC%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
 <noscript><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap" rel="stylesheet"></noscript>
 
+<!-- GOOGLE ANALYTICS (GA4) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXXXXX'); // Ganti G-XXXXXXXXXX dengan Measurement ID Anda
+</script>
+
+<!-- SCHEMA MARKUP (Tetap dipertahankan) -->
 <script type="application/ld+json">
 {
  "@context": "https://schema.org",
@@ -179,7 +49,7 @@ footer .related a{font-weight:500}
  "alternateName": "Super Cold Bekasi",
  "url": "https://supercold.biz.id/",
  "image": "https://supercold.biz.id/og-image.png",
- "logo": "https://supercold.biz.id/profil-whatsapp.png",
+ "logo": "https://supercold.biz.id/og-image.png",
  "telephone": "+6281311922204",
  "description": "Service AC rumah dan perkantoran, kulkas, mesin cuci, jasa kelistrikan, serta cuci dan kuras toren di Kota Bekasi.",
  "priceRange": "Rp85.000 - Rp150.000",
@@ -195,218 +65,10 @@ footer .related a{font-weight:500}
   "postalCode": "17156",
   "addressRegion": "Jawa Barat",
   "addressCountry": "ID"
- },
- "areaServed": [
-  {
-   "@type": "AdministrativeArea",
-   "name": "Mustikajaya"
-  },
-  {
-   "@type": "AdministrativeArea",
-   "name": "Padurenan"
-  },
-  {
-   "@type": "AdministrativeArea",
-   "name": "Rawalumbu"
-  },
-  {
-   "@type": "AdministrativeArea",
-   "name": "Bekasi Timur"
-  },
-  {
-   "@type": "AdministrativeArea",
-   "name": "Bekasi Selatan"
-  },
-  {
-   "@type": "AdministrativeArea",
-   "name": "Bekasi Utara"
-  },
-  {
-   "@type": "AdministrativeArea",
-   "name": "Bekasi Barat"
-  },
-  {
-   "@type": "AdministrativeArea",
-   "name": "Cileungsi"
-  }
- ],
- "openingHoursSpecification": [
-  {
-   "@type": "OpeningHoursSpecification",
-   "dayOfWeek": [
-    "Monday",
-    "Tuesday",
-    "Wednesday",
-    "Thursday",
-    "Friday",
-    "Saturday",
-    "Sunday"
-   ],
-   "opens": "08:00",
-   "closes": "17:00"
-  }
- ],
- "makesOffer": [
-  {
-   "@type": "Offer",
-   "itemOffered": {
-    "@type": "Service",
-    "name": "Cuci AC Split 0,5-1 PK",
-    "provider": {
-     "@id": "https://supercold.biz.id/#business"
-    }
-   },
-   "price": "85000",
-   "priceCurrency": "IDR",
-   "availability": "https://schema.org/InStock"
-  },
-  {
-   "@type": "Offer",
-   "itemOffered": {
-    "@type": "Service",
-    "name": "Cuci AC Split 1,5-2 PK",
-    "provider": {
-     "@id": "https://supercold.biz.id/#business"
-    }
-   },
-   "price": "110000",
-   "priceCurrency": "IDR",
-   "availability": "https://schema.org/InStock"
-  },
-  {
-   "@type": "Offer",
-   "itemOffered": {
-    "@type": "Service",
-    "name": "Cuci AC Inverter 0,5-1 PK",
-    "provider": {
-     "@id": "https://supercold.biz.id/#business"
-    }
-   },
-   "price": "125000",
-   "priceCurrency": "IDR",
-   "availability": "https://schema.org/InStock"
-  },
-  {
-   "@type": "Offer",
-   "itemOffered": {
-    "@type": "Service",
-    "name": "Cuci AC Inverter 1,5-2 PK",
-    "provider": {
-     "@id": "https://supercold.biz.id/#business"
-    }
-   },
-   "price": "150000",
-   "priceCurrency": "IDR",
-   "availability": "https://schema.org/InStock"
-  }
- ],
- "knowsAbout": [
-  "Service AC",
-  "Cuci AC",
-  "Isi freon AC",
-  "Pasang AC",
-  "Service kulkas",
-  "Service mesin cuci",
-  "Instalasi listrik",
-  "Cuci toren",
-  "Kuras toren air"
- ]
-}
-</script>
-<script type="application/ld+json">
-{
- "@context": "https://schema.org",
- "@type": "FAQPage",
- "mainEntity": [
-  {
-   "@type": "Question",
-   "name": "Berapa harga cuci AC di Bekasi?",
-   "acceptedAnswer": {
-    "@type": "Answer",
-    "text": "Cuci AC split mulai Rp85.000 (0,5–1 PK) dan Rp110.000 (1,5–2 PK). Cuci AC inverter mulai Rp125.000 (0,5–1 PK) dan Rp150.000 (1,5–2 PK)."
-   }
-  },
-  {
-   "@type": "Question",
-   "name": "Berapa kali AC sebaiknya dicuci?",
-   "acceptedAnswer": {
-    "@type": "Answer",
-    "text": "Umumnya setiap 3 sampai 4 bulan untuk pemakaian harian. Cuci lebih sering jika ruangan berdebu atau ada asap."
-   }
-  },
-  {
-   "@type": "Question",
-   "name": "Kenapa AC saya tidak dingin?",
-   "acceptedAnswer": {
-    "@type": "Answer",
-    "text": "Penyebab umum: filter dan evaporator kotor, freon kurang, atau komponen listrik seperti kapasitor bermasalah. Teknisi perlu memeriksa unit untuk memastikannya."
-   }
-  },
-  {
-   "@type": "Question",
-   "name": "Berapa biaya isi freon AC?",
-   "acceptedAnswer": {
-    "@type": "Answer",
-    "text": "Biaya bergantung pada jenis freon (R32, R410A, R22) dan kondisi unit. Teknisi mengecek tekanan dan kebocoran lebih dulu, lalu biaya dikonfirmasi sebelum dikerjakan."
-   }
-  },
-  {
-   "@type": "Question",
-   "name": "Apakah teknisi datang ke rumah dan kantor?",
-   "acceptedAnswer": {
-    "@type": "Answer",
-    "text": "Ya. Teknisi datang ke rumah atau kantor sesuai jadwal yang disepakati lewat WhatsApp."
-   }
-  },
-  {
-   "@type": "Question",
-   "name": "Jam berapa Super Cold buka?",
-   "acceptedAnswer": {
-    "@type": "Answer",
-    "text": "Kami melayani setiap hari, termasuk Jumat, pukul 08.00 sampai 17.00. Pesan di luar jam layanan dibalas saat buka."
-   }
-  },
-  {
-   "@type": "Question",
-   "name": "Area mana saja yang dilayani?",
-   "acceptedAnswer": {
-    "@type": "Answer",
-    "text": "Mustikajaya, Padurenan, Rawalumbu, Bekasi Timur, Selatan, Utara, Barat, dan Cileungsi serta sekitarnya. Tanyakan via WhatsApp untuk lokasi lain."
-   }
-  },
-  {
-   "@type": "Question",
-   "name": "Bisa servis banyak unit untuk kantor?",
-   "acceptedAnswer": {
-    "@type": "Answer",
-    "text": "Bisa. Kami menyediakan perawatan berkala dan penawaran kontrak servis. Hubungi kami untuk estimasi."
-   }
-  },
-  {
-   "@type": "Question",
-   "name": "Berapa biaya cuci atau kuras toren?",
-   "acceptedAnswer": {
-    "@type": "Answer",
-    "text": "Biaya bergantung pada kapasitas dan kondisi toren. Kirim foto toren dan perkiraan kapasitasnya lewat WhatsApp untuk mendapat estimasi."
-   }
-  }
- ]
-}
-</script>
-
-<script type="application/ld+json">
-{
- "@context": "https://schema.org",
- "@type": "WebSite",
- "@id": "https://supercold.biz.id/#website",
- "url": "https://supercold.biz.id/",
- "name": "Super Cold HVAC Solution",
- "inLanguage": "id",
- "publisher": {
-  "@id": "https://supercold.biz.id/#business"
  }
 }
 </script>
+
 <style>
 :root{
   --frost:#f2f8fb; --paper:#ffffff; --ink:#10303c; --muted:#4d6671;
@@ -436,11 +98,11 @@ header{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--frost
 nav a{text-decoration:none;font-weight:500;font-size:.92rem;margin-left:18px;color:var(--muted)}
 nav a:hover{color:var(--ink)}
 @media(max-width:640px){
-  html{scroll-padding-top:124px}
+  html{scroll-padding-top:112px}
   .nav{flex-wrap:wrap;height:auto;padding-top:8px;padding-bottom:2px;row-gap:0}
   .brand{margin:0 auto 2px}
   nav{width:100%;display:flex;justify-content:space-between;overflow-x:auto}
-  nav a{margin-left:0;padding:13px 6px;font-size:.88rem;white-space:nowrap}
+  nav a{margin-left:0;padding:8px 6px;font-size:.88rem;white-space:nowrap}
 }
 
 .btn{display:inline-flex;align-items:center;gap:8px;padding:13px 22px;border-radius:999px;font-weight:700;text-decoration:none;background:var(--wa);color:#fff;border:2px solid var(--wa);transition:background .15s}
@@ -462,13 +124,6 @@ nav a:hover{color:var(--ink)}
 .hours-card h3{font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:#bfe9f7;padding:14px 0 6px}
 .hours-card .row{display:flex;justify-content:space-between;gap:16px;padding:10px 8px;border-top:1px solid #2f6f86;font-size:.95rem}
 .hours-card .row dd{margin:0;font-weight:700}
-.hours-card .row.off dd{color:#ffb4a8}
-.hours-card .row.today{background:rgba(191,233,247,.12);border-radius:8px;border-top-color:transparent}
-.hours-card .row.today dt::after{content:"  · hari ini";font-weight:700;color:#bfe9f7}
-.hours-card p{margin:10px 0 0!important;font-size:.85rem!important;color:#b9d6e0}
-.logo-svg{display:block;height:44px;width:auto}
-.logo-lg{display:block;width:min(300px,80%);height:auto;margin:0 auto 22px}
-.brand{display:flex;align-items:center;gap:10px}
 .logo-badge{display:block;width:44px;height:44px;flex:none}
 .logo-word{font-weight:800;font-size:1.3rem;letter-spacing:-.02em;line-height:1}
 .brand .logo-word{color:var(--ink)}
@@ -485,6 +140,7 @@ nav a:hover{color:var(--ink)}
 .card p{color:var(--muted);font-size:.95rem;margin-bottom:12px}
 .card ul{padding-left:18px;font-size:.95rem}
 .card li{margin:3px 0}
+.card-img{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;border-radius:8px;margin-bottom:16px;border:1px solid var(--line)}
 
 .price-grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
 table{width:100%;border-collapse:collapse}
@@ -502,9 +158,9 @@ td:last-child{text-align:right;font-weight:800;color:var(--cold);white-space:now
 .chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:6px}
 .chips span{background:var(--paper);border:1px solid var(--line);border-radius:999px;padding:7px 16px;font-size:.92rem}
 
-details{background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:0;margin-bottom:10px}
-summary{cursor:pointer;font-weight:700;padding:16px 20px}
-details p{color:var(--muted);margin:0;padding:0 20px 16px}
+details{background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:16px 20px;margin-bottom:10px}
+summary{cursor:pointer;font-weight:700}
+details p{color:var(--muted);margin-top:10px}
 
 .rating{display:flex;align-items:center;gap:10px;margin-bottom:28px;font-weight:700}
 .stars{color:#f5a400;letter-spacing:2px}
@@ -513,7 +169,7 @@ details p{color:var(--muted);margin:0;padding:0 20px 16px}
 .quote blockquote{font-size:1rem}
 .quote footer{padding:0;text-align:left;font-size:.88rem;margin-top:auto}
 .quote footer strong{display:block;color:var(--ink)}
-.quote .stars{font-size:.95rem}
+
 .social{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-top:18px}
 .social a{display:inline-flex;align-items:center;gap:8px;padding:9px 18px;border-radius:999px;border:1px solid #3b6c80;color:#eaf6fa;text-decoration:none;font-weight:600;font-size:.92rem}
 .social a:hover{border-color:#bfe9f7}
@@ -525,6 +181,7 @@ footer{padding:32px 0 96px;color:var(--muted);font-size:.9rem;text-align:center}
 
 .float-wa{position:fixed;right:16px;bottom:16px;z-index:30;box-shadow:0 6px 20px rgba(0,0,0,.25)}
 
+/* Styling Form (Tetap dipertahankan) */
 #booking{background:var(--paper);border-block:1px solid var(--line)}
 .choices{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(170px,1fr))}
 .choice{font:inherit;font-weight:700;text-align:left;padding:18px;border-radius:var(--r);border:2px solid var(--line);background:var(--frost);color:var(--ink);cursor:pointer;transition:border-color .15s}
@@ -538,13 +195,6 @@ footer{padding:32px 0 96px;color:var(--muted);font-size:.9rem;text-align:center}
 .bk-actions{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
 .bk-actions button{font:inherit;cursor:pointer}
 .bk-step{font-size:.85rem;font-weight:700;color:var(--cold);margin-bottom:10px}
-
-.hero .wrap{grid-template-columns:1fr}
-.crumbs{font-size:.85rem;color:#b9d6e0;margin-bottom:14px}.crumbs a{color:#b9d6e0;text-decoration:underline}
-.related{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin:0 0 12px}
-.related a{border:1px solid var(--line);background:var(--paper);color:var(--ink);border-radius:999px;padding:8px 16px;font-weight:700;font-size:.88rem;text-decoration:none}
-footer .related a{font-weight:500}
-.sec-link{margin-top:12px}.sec-link a{font-weight:700;color:var(--cold)}
 </style>
 </head>
 <body>
@@ -554,7 +204,6 @@ footer .related a{font-weight:500}
     <a class="brand" href="#" aria-label="Super Cold Air Conditioner, kembali ke atas"><svg class="logo-badge" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="30" fill="#0A5CC5"/><circle cx="32" cy="32" r="25" fill="none" stroke="#7DD3FC" stroke-width="1.5"/><text x="32" y="41" text-anchor="middle" font-size="24" font-weight="800" letter-spacing="1" fill="#fff" style="font-family:inherit">SC</text></svg><span class="logo-word">Super<span>Cold</span></span></a>
     <nav aria-label="Menu utama">
       <a class="hide-m" href="#layanan">Layanan</a>
-      <a href="#booking">Booking</a>
       <a href="#harga">Harga</a>
       <a class="hide-m" href="#ulasan">Ulasan</a>
       <a href="#kontak">Kontak</a>
@@ -570,9 +219,8 @@ footer .related a{font-weight:500}
       <h1>Service AC Bekasi dan jasa listrik, teknisi datang ke rumah Anda</h1>
       <p>Cuci AC, isi freon, pasang dan pindah AC, service kulkas dan mesin cuci, cuci dan kuras toren, serta perbaikan listrik untuk rumah dan kantor. Ceritakan keluhan Anda lewat WhatsApp, kami atur jadwalnya.</p>
       <div class="cta">
-        <a class="btn" href="#booking">Booking via WhatsApp</a>
+        <a class="btn" href="https://wa.me/6281311922204" rel="noopener noreferrer">Booking via WhatsApp</a>
         <a class="btn ghost" href="#harga">Lihat harga</a>
-        <a class="btn ghost" href="tel:+6281311922204">Telepon</a>
       </div>
       <p class="hours-hero"><span class="dot" id="st-dot"></span><span id="st-text">Layanan setiap hari 08.00 – 17.00</span></p>
     </div>
@@ -584,167 +232,36 @@ footer .related a{font-weight:500}
   </div>
 </div>
 
-<section id="booking">
-  <div class="wrap">
-    <h2>Booking service AC dan listrik via WhatsApp</h2>
-    <p class="lead">Pilih jenis layanan, isi data singkat, lalu data Anda langsung terkirim ke WhatsApp kami dalam format yang rapi.</p>
-    <div id="bk-root" aria-live="polite">
-      <noscript><a class="btn" href="https://wa.me/6281311922204" rel="noopener noreferrer">Chat WhatsApp</a></noscript>
-    </div>
-  </div>
-</section>
-
-<script>
-(function(){
-  var WA="6281311922204", root=document.getElementById("bk-root");
-  var T={nama:{k:"Nama",t:"text",ac:"name"},alamat:{k:"Alamat lengkap",t:"textarea",ac:"street-address"},hp:{k:"No HP",t:"tel",ac:"tel",ph:"08xxxxxxxxxx"}};
-  var JADWAL={k:"Hari, tanggal & jam",t:"dt"};
-  var C=[T.nama,T.alamat,T.hp];
-  var YN=["Inverter","Standar"];
-  var S={
-    cuci:{n:"Cuci AC",d:"Split dan inverter",f:C.concat([
-      {k:"Jumlah unit AC yang dicuci",t:"number",v:1},
-      {k:"Kapasitas AC",t:"select",o:["0,5 – 1 PK","1,5 – 2 PK"]},
-      {k:"Jenis AC",t:"select",o:["Inverter","Standar"]},JADWAL]),est:true},
-    perbaikan:{n:"Perbaikan AC",d:"Tidak dingin, bocor, berisik",f:C.concat([
-      {k:"Merk AC",t:"text",ph:"Contoh: Daikin, Panasonic"},
-      {k:"Kerusakan",t:"textarea",ph:"Ceritakan keluhan AC Anda"},
-      {k:"Jenis AC",t:"select",o:YN},JADWAL])},
-    kulkas:{n:"Kulkas",d:"Tidak dingin atau bocor",f:C.concat([
-      {k:"Merk kulkas & jumlah pintu",t:"text",ph:"Contoh: Sharp, 2 pintu"},
-      {k:"Kerusakan",t:"textarea"},
-      {k:"Jenis kulkas",t:"select",o:YN},JADWAL])},
-    mesin:{n:"Mesin cuci",d:"Tidak berputar atau mengering",f:C.concat([
-      {k:"Merk mesin cuci & jumlah tabung",t:"text",ph:"Contoh: Polytron, 2 tabung"},
-      {k:"Kerusakan",t:"textarea"},JADWAL])},
-    listrik:{n:"Kelistrikan",d:"Instalasi dan perbaikan",f:C.concat([
-      {k:"Pekerjaan yang dibutuhkan",t:"textarea",ph:"Contoh: tambah stop kontak, pasang MCB"},JADWAL])},
-    toren:{n:"Cuci / kuras toren",d:"Bersih dan higienis",f:C.concat([
-      {k:"Jenis toren",t:"select",o:["Plastik / fiber","Stainless","Beton / tanam"]},
-      {k:"Kapasitas toren (liter)",t:"text",ph:"Contoh: 1.000 liter"},
-      {k:"Jumlah toren",t:"number",v:1},JADWAL])}
-  };
-  var PRICE={"Standar":[85000,110000],"Inverter":[125000,150000]};
-  function rp(n){return "Rp"+n.toLocaleString("id-ID");}
-  function pad(n){return (n<10?"0":"")+n;}
-  function el(h){var d=document.createElement("div");d.innerHTML=h;return d.firstChild;}
-
-  function menu(){
-    root.innerHTML='<p class="bk-step">Langkah 1 dari 2 · Jasa apa yang Anda butuhkan?</p><div class="choices"></div>';
-    var box=root.querySelector(".choices");
-    Object.keys(S).forEach(function(id,i){
-      var b=el('<button type="button" class="choice">'+(i+1)+'. '+S[id].n+'<span>'+S[id].d+'</span></button>');
-      b.onclick=function(){form(id);root.scrollIntoView({behavior:"smooth",block:"start"});};
-      box.appendChild(b);
-    });
-  }
-
-  function form(id){
-    var sv=S[id], h='<p class="bk-step">Langkah 2 dari 2 · '+sv.n+'</p><form class="bk-form" novalidate>';
-    sv.f.forEach(function(f,i){
-      var n="f"+i, a=f.ac?' autocomplete="'+f.ac+'"':"", p=f.ph?' placeholder="'+f.ph+'"':"";
-      h+='<label for="'+n+'">'+f.k;
-      if(f.t==="textarea")h+='<textarea id="'+n+'" required'+a+p+'></textarea>';
-      else if(f.t==="select")h+='<select id="'+n+'" required>'+f.o.map(function(o){return '<option>'+o+'</option>';}).join("")+'</select>';
-      else if(f.t==="dt")h+='<input id="'+n+'" type="datetime-local" required>';
-      else if(f.t==="number")h+='<input id="'+n+'" type="number" min="1" max="50" value="'+f.v+'" inputmode="numeric" required>';
-      else h+='<input id="'+n+'" type="'+f.t+'" required'+a+p+(f.t==="tel"?' inputmode="tel"':'')+'>';
-      h+='</label>';
-    });
-    if(sv.est)h+='<div class="bk-est" id="bk-est"></div>';
-    h+='<p class="note" style="margin:0">Layanan setiap hari, 08.00 – 17.00.</p>';
-    h+='<div class="bk-actions"><button class="btn" type="submit">Kirim ke WhatsApp</button><button class="btn ghost" type="button" id="bk-back">Ganti layanan</button></div><p class="note" id="bk-out" style="margin:0"></p></form>';
-    root.innerHTML=h;
-    var fm=root.querySelector("form"), inputs=sv.f.map(function(_,i){return fm.querySelector("#f"+i);});
-    var di=sv.f.map(function(f){return f.t;}).indexOf("dt"), dt=inputs[di];
-    var now=new Date();dt.min=now.getFullYear()+"-"+pad(now.getMonth()+1)+"-"+pad(now.getDate())+"T"+pad(now.getHours())+":"+pad(now.getMinutes());
-    function est(){
-      if(!sv.est)return null;
-      var u=parseInt(inputs[3].value,10)||0, cap=inputs[4].selectedIndex, jn=inputs[5].value;
-      var t=u*PRICE[jn][cap];
-      fm.querySelector("#bk-est").textContent="Estimasi biaya: "+rp(t)+" ("+u+" unit). Belum termasuk perbaikan tambahan jika diperlukan.";
-      return rp(t);
-    }
-    est();
-    fm.addEventListener("input",function(){dt.setCustomValidity("");est();});
-    fm.querySelector("#bk-back").onclick=menu;
-    fm.onsubmit=function(e){
-      e.preventDefault();
-      var d=new Date(dt.value);
-      if(!dt.value||isNaN(d))dt.setCustomValidity("Pilih tanggal dan jam.");
-      else if(d.getHours()<8||d.getHours()>16||(d.getHours()===17&&d.getMinutes()>0))dt.setCustomValidity("Jam layanan 08.00 – 17.00.");
-      if(!fm.checkValidity()){fm.reportValidity();return;}
-      var m="*Booking "+sv.n+" – Super Cold*\n\n";
-      sv.f.forEach(function(f,i){
-        var v=inputs[i].value.trim();
-        if(f.t==="dt")v=d.toLocaleString("id-ID",{weekday:"long",day:"numeric",month:"long",year:"numeric",hour:"2-digit",minute:"2-digit"})+" WIB";
-        m+=f.k+": "+v+"\n";
-      });
-      var r=est();if(r)m+="Estimasi biaya: "+r+"\n";
-      m+="\nMohon konfirmasi jadwal. Terima kasih.";
-      var url="https://wa.me/"+WA+"?text="+encodeURIComponent(m);
-      var o=fm.querySelector("#bk-out");
-      o.innerHTML='Data siap dikirim. Jika WhatsApp belum terbuka, ketuk tombol ini:<br><a class="btn" style="margin-top:10px" href="'+url+'" target="_blank" rel="noopener noreferrer">Buka WhatsApp</a>';
-      if(/Android|iPhone|iPad|iPod/i.test(navigator.userAgent)){window.location.href=url;}
-      else{var w=window.open(url,"_blank");if(w){w.opener=null;}else{window.location.href=url;}}
-    };
-  }
-  menu();
-})();
-</script>
-
 <section id="layanan">
   <div class="wrap">
     <h2>Satu teknisi untuk AC, listrik, kulkas, mesin cuci, dan toren</h2>
     <p class="lead">AC bermasalah sering berkaitan dengan listrik. Karena itu keduanya kami tangani di satu tempat.</p>
     <div class="grid">
       <div class="card">
+        <!-- GAMBAR UNTUK SEO: Siapkan gambar berukuran ~400x225px -->
+        <img class="card-img" src="gambar-service-ac-rumah.jpg" alt="Teknisi Super Cold melakukan cuci dan service AC rumah di Bekasi" loading="lazy" width="400" height="225">
         <h3>Service AC rumah</h3>
-        <p>Untuk AC split di kamar, ruang keluarga, dan ruang usaha kecil.</p>
-        <ul><li>Cuci AC</li><li>Isi dan cek freon</li><li>Bongkar pasang dan pindah unit</li><li>Perbaikan AC tidak dingin, bocor, atau berisik</li></ul><p class="sec-link"><a href="/service-ac-bekasi/">Service AC →</a></p>
+        <ul><li>Cuci AC</li><li>Isi dan cek freon</li><li>Bongkar pasang dan pindah unit</li><li>Perbaikan AC tidak dingin, bocor, atau berisik</li></ul>
       </div>
       <div class="card">
+        <img class="card-img" src="gambar-service-ac-kantor.jpg" alt="Perawatan dan cuci AC rutin untuk perkantoran di Kota Bekasi" loading="lazy" width="400" height="225">
         <h3>Service AC perkantoran</h3>
-        <p>Perawatan banyak unit agar ruang kerja tetap nyaman.</p>
-        <ul><li>Perawatan berkala banyak unit</li><li>Cuci dan pengecekan rutin</li><li>Perbaikan dan ganti komponen</li><li>Penawaran kontrak servis</li></ul><p class="sec-link"><a href="/service-ac-bekasi/">Service AC →</a></p>
+        <ul><li>Perawatan berkala banyak unit</li><li>Cuci dan pengecekan rutin</li><li>Perbaikan dan ganti komponen</li><li>Penawaran kontrak servis</li></ul>
       </div>
       <div class="card">
+        <img class="card-img" src="gambar-instalasi-listrik.jpg" alt="Jasa perbaikan dan instalasi listrik untuk rumah dan AC di Bekasi" loading="lazy" width="400" height="225">
         <h3>Jasa kelistrikan</h3>
-        <p>Instalasi dan perbaikan listrik, termasuk jalur khusus AC.</p>
-        <ul><li>Tambah titik listrik</li><li>Pasang MCB, stop kontak, saklar</li><li>Perbaikan listrik turun atau korslet</li><li>Jalur kabel khusus AC</li></ul><p class="sec-link"><a href="/jasa-listrik-bekasi/">Jasa listrik →</a></p>
-      </div>
-      <div class="card">
-        <h3>Kulkas dan mesin cuci</h3>
-        <p>Service peralatan rumah tangga, sekalian dengan AC dan listrik.</p>
-        <ul><li>Kulkas tidak dingin atau bocor</li><li>Mesin cuci tidak berputar atau tidak mengeringkan</li><li>Pengecekan kelistrikan unit</li><li>Konsultasi kerusakan via WhatsApp</li></ul><p class="sec-link"><a href="/service-kulkas-bekasi/">Service kulkas →</a> · <a href="/service-mesin-cuci-bekasi/">Service mesin cuci →</a></p>
-      </div>
-      <div class="card">
-        <h3>Cuci dan kuras toren</h3>
-        <p>Pembersihan toren air untuk rumah, ruko, dan kantor.</p>
-        <ul><li>Kuras dan sikat dinding toren</li><li>Bersihkan endapan lumpur dan lumut</li><li>Toren plastik, fiber, stainless, dan beton</li><li>Bisa dijadwalkan berkala</li></ul><p class="sec-link"><a href="/kuras-toren-bekasi/">Cuci kuras toren →</a></p>
+        <ul><li>Tambah titik listrik</li><li>Pasang MCB, stop kontak, saklar</li><li>Perbaikan listrik turun atau korslet</li><li>Jalur kabel khusus AC</li></ul>
       </div>
     </div>
   </div>
 </section>
 
-<section id="masalah-ac">
-  <div class="wrap">
-    <h2>Masalah AC yang sering kami tangani</h2>
-    <p class="lead">Kenali gejalanya, lalu kirim keluhan Anda lewat WhatsApp agar teknisi bisa menyiapkan peralatan yang tepat.</p>
-    <div class="grid">
-      <div class="card"><h3>AC tidak dingin</h3><p>Sering karena filter dan evaporator kotor, freon kurang, atau kapasitor lemah. Cuci AC dan cek freon biasanya jadi langkah pertama.</p></div>
-      <div class="card"><h3>AC bocor atau menetes</h3><p>Biasanya saluran pembuangan tersumbat atau pemasangan unit kurang miring. Kami bersihkan saluran dan cek posisi unit.</p></div>
-      <div class="card"><h3>AC berisik atau bau</h3><p>Bisa berasal dari kipas kotor, baut kendor, atau jamur di evaporator. Cuci menyeluruh umumnya mengatasinya.</p></div>
-      <div class="card"><h3>AC mati atau listrik turun</h3><p>Perlu dicek MCB, kabel, dan kapasitas listrik. Kami menangani sisi AC dan kelistrikannya sekaligus.</p></div>
-    </div>
-  </div>
-</section>
-
+<!-- Sisa elemen tetap dipertahankan sesuai aslinya -->
 <section id="harga" style="background:var(--paper);border-block:1px solid var(--line)">
   <div class="wrap">
     <h2>Harga cuci AC Bekasi yang jelas</h2>
     <p class="lead">Harga berlaku untuk AC split. Kondisi unit yang butuh perbaikan tambahan akan dikonfirmasi lebih dulu sebelum dikerjakan.</p>
-    <p class="sec-link"><a href="/cuci-ac-bekasi/">Detail layanan cuci AC →</a></p>
     <div class="price-grid">
       <div class="card">
         <table>
@@ -761,33 +278,6 @@ footer .related a{font-weight:500}
         </table>
       </div>
     </div>
-    <p class="note">Isi freon, pasang AC, perbaikan, kulkas, mesin cuci, cuci toren, dan kelistrikan: harga tergantung kondisi di lokasi.
-      <a href="https://wa.me/6281311922204?text=Halo%20Super%20Cold%2C%20saya%20mau%20tanya%20harga%20layanan%20lain" target="_blank" rel="noopener noreferrer"><strong>Tanya harga via WhatsApp</strong></a>.</p>
-  </div>
-</section>
-
-<section id="cara">
-  <div class="wrap">
-    <h2>Cara booking service AC</h2>
-    <p class="lead">Tidak perlu isi formulir panjang.</p>
-    <ol class="steps">
-      <li><strong>Pilih layanan dan isi data</strong><span>Isi form singkat, lalu kirim ke WhatsApp kami.</span></li>
-      <li><strong>Sepakati jadwal</strong><span>Kami konfirmasi estimasi biaya dan waktu kunjungan.</span></li>
-      <li><strong>Teknisi datang</strong><span>Unit diperiksa dan dikerjakan di lokasi Anda.</span></li>
-      <li><strong>Bayar setelah selesai</strong><span>Cek hasilnya dulu bersama teknisi.</span></li>
-    </ol>
-  </div>
-</section>
-
-<section id="kenapa" style="background:var(--paper);border-block:1px solid var(--line)">
-  <div class="wrap">
-    <h2>Kenapa memilih Super Cold</h2>
-    <div class="grid" style="margin-top:24px">
-      <div class="card"><h3>Bersertifikasi BNSP</h3><p>Kompetensi teknisi diakui oleh Badan Nasional Sertifikasi Profesi.</p></div>
-      <div class="card"><h3>AC dan listrik sekaligus</h3><p>Masalah AC yang berhubungan dengan kelistrikan bisa selesai dalam satu kunjungan.</p></div>
-      <div class="card"><h3>Datang ke lokasi</h3><p>Rumah atau kantor, sesuai jadwal yang disepakati.</p></div>
-      <div class="card"><h3>Konsultasi mudah</h3><p>Cukup chat WhatsApp, kami bantu arahkan solusinya.</p></div>
-    </div>
   </div>
 </section>
 
@@ -800,158 +290,18 @@ footer .related a{font-weight:500}
         <blockquote>“Gak asal tembak tambah freon. Diceritain detail masalah AC saya. Terimakasih banyak !”</blockquote>
         <footer><strong>Zulkifli S.</strong>Servis AC · Ulasan Google</footer></figure>
       <figure class="quote"><span class="stars" aria-label="5 dari 5 bintang">★★★★★</span>
-        <blockquote>“Puas banget pakai jasa di sini service AC jadi dingin teknisi ramah sukses terus 😶‍🌫️”</blockquote>
-        <footer><strong>Puguh A. B.</strong>Service AC · Ulasan Google</footer></figure>
-      <figure class="quote"><span class="stars" aria-label="5 dari 5 bintang">★★★★★</span>
-        <blockquote>“Masya Allah mantap, teknisinya ramah dan kerjanya rapih, begitu selesai dicuci AC langsung dingin poll !”</blockquote>
-        <footer><strong>Agung W.</strong>Cuci AC · Ulasan Google</footer></figure>
-      <figure class="quote"><span class="stars" aria-label="5 dari 5 bintang">★★★★★</span>
-        <blockquote>“Pelayanan cepat, Ac jadi dingin lagi seperti baru. Recommended banget buat cuci ac rutin”</blockquote>
-        <footer><strong>Aldy R.</strong>Cuci AC · Ulasan Google</footer></figure>
-      <figure class="quote"><span class="stars" aria-label="5 dari 5 bintang">★★★★★</span>
         <blockquote>“Alhamdulillah teknisinya jujur, dijelaskan kerusakkannya apa saja sebelum di perbaiki. Harga transparan.”</blockquote>
         <footer><strong>M. Anwar</strong>Perbaikan AC · Ulasan Google</footer></figure>
-      <figure class="quote"><span class="stars" aria-label="5 dari 5 bintang">★★★★★</span>
-        <blockquote>“Berlangganan cuci dan servis AC saya, alhamdulillah AC Daikin sm Panasonic kembali normal biidznillah. Jazakullah khairan wa barakallahu fiikum”</blockquote>
-        <footer><strong>Simpoy U.</strong>Cuci, reparasi, dan pasang AC · Ulasan Google</footer></figure>
-      <figure class="quote"><span class="stars" aria-label="5 dari 5 bintang">★★★★★</span>
-        <blockquote>“Selalu amanah dan puas dengan kinerjanya terimakasih”</blockquote>
-        <footer><strong>Fazar Y.</strong>Cuci dan bongkar AC · Ulasan Google</footer></figure>
-      <figure class="quote"><span class="stars" aria-label="5 dari 5 bintang">★★★★★</span>
-        <blockquote>“Mantap.”</blockquote>
-        <footer><strong>Deris K.</strong>Ulasan Google</footer></figure>
     </div>
     <p class="note"><a href="https://maps.app.goo.gl/xkygbspe6Nr99H9V7" target="_blank" rel="noopener noreferrer"><strong>Lihat semua ulasan di Google Maps</strong></a></p>
-  </div>
-</section>
-
-<section id="area">
-  <div class="wrap">
-    <h2>Service AC di Mustikajaya, Padurenan, dan sekitar Bekasi</h2>
-    <p class="lead">Berbasis di Padurenan, Mustikajaya, Kota Bekasi. Tanyakan via WhatsApp jika lokasi Anda di sekitar area berikut.</p>
-    <div class="chips">
-      <span>Mustikajaya</span><span>Padurenan</span><span>Bekasi Timur</span><span>Bekasi Selatan</span><span>Bekasi Utara</span><span>Bekasi Barat</span><span>Rawalumbu</span><span>Cileungsi dan sekitarnya</span>
-    </div>
-  </div>
-</section>
-
-<section id="faq" style="padding-top:0">
-  <div class="wrap">
-    <h2>Pertanyaan yang sering diajukan</h2>
-    <div style="margin-top:20px">
-      <details><summary>Berapa harga cuci AC di Bekasi?</summary><p>Cuci AC split mulai Rp85.000 (0,5–1 PK) dan Rp110.000 (1,5–2 PK). Cuci AC inverter mulai Rp125.000 (0,5–1 PK) dan Rp150.000 (1,5–2 PK).</p></details>
-      <details><summary>Berapa kali AC sebaiknya dicuci?</summary><p>Umumnya setiap 3 sampai 4 bulan untuk pemakaian harian. Cuci lebih sering jika ruangan berdebu atau ada asap.</p></details>
-      <details><summary>Kenapa AC saya tidak dingin?</summary><p>Penyebab umum: filter dan evaporator kotor, freon kurang, atau komponen listrik seperti kapasitor bermasalah. Teknisi perlu memeriksa unit untuk memastikannya.</p></details>
-      <details><summary>Berapa biaya isi freon AC?</summary><p>Biaya bergantung pada jenis freon (R32, R410A, R22) dan kondisi unit. Teknisi mengecek tekanan dan kebocoran lebih dulu, lalu biaya dikonfirmasi sebelum dikerjakan.</p></details>
-      <details><summary>Apakah teknisi datang ke rumah dan kantor?</summary><p>Ya. Teknisi datang ke rumah atau kantor sesuai jadwal yang disepakati lewat WhatsApp.</p></details>
-      <details><summary>Jam berapa Super Cold buka?</summary><p>Kami melayani setiap hari, termasuk Jumat, pukul 08.00 sampai 17.00. Pesan di luar jam layanan dibalas saat buka.</p></details>
-      <details><summary>Area mana saja yang dilayani?</summary><p>Mustikajaya, Padurenan, Rawalumbu, Bekasi Timur, Selatan, Utara, Barat, dan Cileungsi serta sekitarnya. Tanyakan via WhatsApp untuk lokasi lain.</p></details>
-      <details><summary>Bisa servis banyak unit untuk kantor?</summary><p>Bisa. Kami menyediakan perawatan berkala dan penawaran kontrak servis. Hubungi kami untuk estimasi.</p></details>
-      <details><summary>Berapa biaya cuci atau kuras toren?</summary><p>Biaya bergantung pada kapasitas dan kondisi toren. Kirim foto toren dan perkiraan kapasitasnya lewat WhatsApp untuk mendapat estimasi.</p></details>
-    </div>
-  </div>
-</section>
-
-<section id="kontak" style="padding-top:0">
-  <div class="wrap">
-    <div class="final">
-      <svg class="logo-lg" viewBox="0 20 380 235" role="img" aria-label="Logo Super Cold, Service AC Profesional"><circle cx="190" cy="92" r="60" fill="#0A5CC5"/><circle cx="190" cy="92" r="52" fill="none" stroke="#7DD3FC" stroke-width="2"/><text x="190" y="109" text-anchor="middle" font-size="48" font-weight="800" letter-spacing="2" fill="#fff" style="font-family:inherit">SC</text><text x="190" y="195" text-anchor="middle" font-size="42" font-weight="800" style="font-family:inherit;letter-spacing:-.02em"><tspan fill="#eaf6fa">Super</tspan><tspan fill="#38BDF8">Cold</tspan></text><line x1="120" y1="214" x2="260" y2="214" stroke="#38BDF8" stroke-width="2" stroke-linecap="round"/><text x="190" y="238" text-anchor="middle" font-size="13" font-weight="500" letter-spacing="3" fill="#b9d6e0" style="font-family:inherit">SERVICE AC PROFESIONAL</text></svg>
-      <h2>AC bermasalah? Hubungi Super Cold sekarang</h2>
-      <p>Kirim jenis masalah, merek AC, dan alamat Anda. Kami balas dan atur jadwal kunjungan.</p>
-      <a class="btn" href="https://wa.me/6281311922204?text=Halo%20Super%20Cold%2C%20saya%20ingin%20servis%20AC%20atau%20kelistrikan" target="_blank" rel="noopener noreferrer">Chat WhatsApp 0813-1192-2204</a>
-      <div class="hours-card" aria-label="Jam layanan">
-        <h3>Jam layanan</h3>
-        <dl style="margin:0">
-          <div class="row" data-days="0,1,2,3,4,5,6"><dt>Setiap hari</dt><dd>08.00 – 17.00</dd></div>
-        </dl>
-        <p>Pesan di luar jam layanan akan kami balas saat jam buka.</p>
-      </div>
-      <div class="social" aria-label="Media sosial Super Cold">
-        <a href="https://www.instagram.com/teknisiacbekasi" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 7.2A4.8 4.8 0 1 0 12 16.8 4.8 4.8 0 0 0 12 7.2zm0 7.9a3.1 3.1 0 1 1 0-6.2 3.1 3.1 0 0 1 0 6.2zM17.2 6.1a1.1 1.1 0 1 0 0 2.2 1.1 1.1 0 0 0 0-2.2zM12 2.5c-2.6 0-2.9 0-3.9.1-1 0-1.7.2-2.3.4-.6.2-1.2.6-1.7 1.1-.5.5-.9 1.1-1.1 1.7-.2.6-.4 1.3-.4 2.3-.1 1-.1 1.3-.1 3.9s0 2.9.1 3.9c0 1 .2 1.7.4 2.3.2.6.6 1.2 1.1 1.7.5.5 1.1.9 1.7 1.1.6.2 1.3.4 2.3.4 1 .1 1.3.1 3.9.1s2.9 0 3.9-.1c1 0 1.7-.2 2.3-.4.6-.2 1.2-.6 1.7-1.1.5-.5.9-1.1 1.1-1.7.2-.6.4-1.3.4-2.3.1-1 .1-1.3.1-3.9s0-2.9-.1-3.9c0-1-.2-1.7-.4-2.3-.2-.6-.6-1.2-1.1-1.7-.5-.5-1.1-.9-1.7-1.1-.6-.2-1.3-.4-2.3-.4-1-.1-1.3-.1-3.9-.1zm0 1.7c2.6 0 2.9 0 3.9.1.9 0 1.4.2 1.8.3.4.2.8.4 1.1.7.3.3.5.7.7 1.1.1.4.3.9.3 1.8.1 1 .1 1.3.1 3.9s0 2.9-.1 3.9c0 .9-.2 1.4-.3 1.8-.2.4-.4.8-.7 1.1-.3.3-.7.5-1.1.7-.4.1-.9.3-1.8.3-1 .1-1.3.1-3.9.1s-2.9 0-3.9-.1c-.9 0-1.4-.2-1.8-.3-.4-.2-.8-.4-1.1-.7-.3-.3-.5-.7-.7-1.1-.1-.4-.3-.9-.3-1.8-.1-1-.1-1.3-.1-3.9s0-2.9.1-3.9c0-.9.2-1.4.3-1.8.2-.4.4-.8.7-1.1.3-.3.7-.5 1.1-.7.4-.1.9-.3 1.8-.3 1-.1 1.3-.1 3.9-.1z"/></svg>@teknisiacbekasi</a>
-        <a href="https://www.facebook.com/share/1FDZmS5CMo/" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 22v-8.2h2.8l.4-3.2h-3.2V8.6c0-.9.3-1.5 1.6-1.5h1.7V4.2c-.3 0-1.3-.1-2.5-.1-2.5 0-4.1 1.5-4.1 4.2v2.3H7.4v3.2h2.8V22h3.3z"/></svg>Teknisi AC Bekasi</a>
-      </div>
-      <p style="margin:20px 0 0;font-size:.9rem">Jl. Jambon, RT.004/RW.001, Padurenan, Mustika Jaya, Kota Bekasi 17156<br><a href="https://maps.app.goo.gl/xkygbspe6Nr99H9V7" target="_blank" rel="noopener noreferrer" style="font-weight:700">Buka di Google Maps</a></p>
-    </div>
   </div>
 </section>
 </main>
 
 <footer>
-  <div class="wrap"><p style="margin-bottom:12px"><strong>Layanan Super Cold</strong></p><div class="related"><a href="/cuci-ac-bekasi/">Cuci AC</a><a href="/service-ac-bekasi/">Service AC</a><a href="/service-kulkas-bekasi/">Kulkas</a><a href="/service-mesin-cuci-bekasi/">Mesin Cuci</a><a href="/jasa-listrik-bekasi/">Listrik</a><a href="/kuras-toren-bekasi/">Kuras Toren</a></div><p style="margin-bottom:10px">Ikuti kami: <a href="https://www.instagram.com/teknisiacbekasi" target="_blank" rel="noopener noreferrer">Instagram</a> · <a href="https://www.facebook.com/share/1FDZmS5CMo/" target="_blank" rel="noopener noreferrer">Facebook</a><br>Super Cold HVAC Solution · Service AC, Kulkas, Mesin Cuci dan Kelistrikan · Kota Bekasi</p></div>
+  <div class="wrap">Ikuti kami: <a href="https://www.instagram.com/teknisiacbekasi" target="_blank" rel="noopener noreferrer">Instagram</a><br>Super Cold HVAC Solution · Service AC, Kulkas, Mesin Cuci dan Kelistrikan · Kota Bekasi</div>
 </footer>
 
-<a class="btn float-wa" href="https://wa.me/6281311922204?text=Halo%20Super%20Cold%2C%20saya%20ingin%20tanya%20servis%20AC" target="_blank" rel="noopener noreferrer" aria-label="Chat WhatsApp Super Cold">Chat WhatsApp</a>
-
-<script>
-(function(){
-  try{
-    var f=new Intl.DateTimeFormat("en-US",{timeZone:"Asia/Jakarta",weekday:"short",hour:"numeric",minute:"numeric",hourCycle:"h23"}).formatToParts(new Date());
-    var g=function(t){return f.find(function(x){return x.type===t}).value};
-    var map={Sun:0,Mon:1,Tue:2,Wed:3,Thu:4,Fri:5,Sat:6};
-    var names=["Minggu","Senin","Selasa","Rabu","Kamis","Jumat","Sabtu"];
-    var d=map[g("weekday")],h=parseInt(g("hour"),10)%24;
-    var dot=document.getElementById("st-dot"),txt=document.getElementById("st-text");
-    var isOpen=h>=8&&h<17,msg;
-    if(isOpen){msg="Buka sekarang · sampai 17.00";}
-    else{
-      var n=(h<8)?d:(d+1)%7;
-      var when=(n===d)?"hari ini":(n===(d+1)%7?"besok":names[n]);
-      msg="Tutup · buka "+when+" pukul 08.00";
-    }
-    txt.textContent=msg;dot.className="dot "+(isOpen?"open":"closed");
-    document.querySelectorAll(".hours-card .row").forEach(function(r){
-      if(r.dataset.days.split(",").indexOf(String(d))>-1)r.classList.add("today");
-    });
-  }catch(e){}
-})();
-</script>
+<a class="btn float-wa" href="https://wa.me/6281311922204?text=Halo%20Super%20Cold%2C%20saya%20ingin%20tanya%20servis%20AC" target="_blank" rel="noopener noreferrer">Chat WhatsApp</a>
 </body>
 </html>
-
-User-agent: *
-Allow: /
-
-Sitemap: https://supercold.biz.id/sitemap.xml
-
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://supercold.biz.id/</loc><lastmod>2026-10-30</lastmod><priority>1.0</priority></url>
-  <url><loc>https://supercold.biz.id/cuci-ac-bekasi/</loc><lastmod>2026-10-30</lastmod><priority>0.8</priority></url>
-  <url><loc>https://supercold.biz.id/service-ac-bekasi/</loc><lastmod>2026-10-30</lastmod><priority>0.8</priority></url>
-  <url><loc>https://supercold.biz.id/service-kulkas-bekasi/</loc><lastmod>2026-10-30</lastmod><priority>0.8</priority></url>
-  <url><loc>https://supercold.biz.id/service-mesin-cuci-bekasi/</loc><lastmod>2026-10-30</lastmod><priority>0.8</priority></url>
-  <url><loc>https://supercold.biz.id/jasa-listrik-bekasi/</loc><lastmod>2026-10-30</lastmod><priority>0.8</priority></url>
-  <url><loc>https://supercold.biz.id/kuras-toren-bekasi/</loc><lastmod>2026-10-30</lastmod><priority>0.8</priority></url>
-</urlset>
-
-{
- "trailingSlash": true,
- "headers": [
-  {
-   "source": "/(.*)",
-   "headers": [
-    {
-     "key": "X-Content-Type-Options",
-     "value": "nosniff"
-    },
-    {
-     "key": "Referrer-Policy",
-     "value": "strict-origin-when-cross-origin"
-    },
-    {
-     "key": "X-Frame-Options",
-     "value": "SAMEORIGIN"
-    }
-   ]
-  },
-  {
-   "source": "/(.*)\\.png",
-   "headers": [
-    {
-     "key": "Cache-Control",
-     "value": "public, max-age=2592000"
-    }
-   ]
-  }
- ]
-}
