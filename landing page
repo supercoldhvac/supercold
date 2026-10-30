@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penawaran Jasa Service AC Profesional</title>
+    <meta name="description" content="Layanan service AC profesional, cepat, dan bergaransi. Melayani cuci AC, perbaikan, tambah freon, dan bongkar pasang. Hubungi kami sekarang!">
+    <meta name="keywords" content="Service AC, Cuci AC, Tukang AC, Perbaikan AC, Pasang AC, Service AC Terdekat">
+    
+    <!-- Memuat Tailwind CSS langsung via CDN agar ringan dan praktis dalam 1 file -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+    
+    <!-- Navigasi -->
+    <nav class="bg-blue-600 text-white p-4 shadow-md sticky top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">ServiceAC<span class="text-blue-200">Pro</span></h1>
+            <a href="#kontak" class="bg-white text-blue-600 px-4 py-2 rounded font-semibold hover:bg-blue-50 transition">Hubungi Kami</a>
+        </div>
+    </nav>
+
+    <!-- Header / Hero Section -->
+    <header class="bg-blue-100 py-20 text-center">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl md:text-5xl font-extrabold text-blue-900 mb-4">Solusi Cepat untuk AC Dingin Maksimal</h2>
+            <p class="text-lg md:text-xl text-gray-700 mb-8">Layanan cuci, perbaikan, dan perawatan AC terpercaya dengan teknisi berpengalaman dan garansi perbaikan.</p>
+            <a href="https://wa.me/6281234567890?text=Halo%2C%20saya%20ingin%20pesan%20jasa%20service%20AC" target="_blank" class="bg-green-500 hover:bg-green-600 text-white text-lg font-bold py-3 px-8 rounded-full shadow-lg transition transform hover:scale-105 inline-block">Pesan Sekarang via WhatsApp</a>
+        </div>
+    </header>
+
+    <!-- Bagian Layanan -->
+    <section class="py-16 container mx-auto px-4">
+        <h3 class="text-3xl font-bold text-center text-gray-800 mb-10">Layanan Kami</h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white p-6 rounded-lg shadow hover:shadow-xl transition border-t-4 border-blue-500">
+                <h4 class="text-xl font-bold text-blue-600 mb-2">Cuci AC Berkala</h4>
+                <p class="text-gray-600">Membersihkan filter, evaporator, dan unit outdoor agar AC kembali dingin, hemat listrik, dan udara lebih bersih.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow hover:shadow-xl transition border-t-4 border-blue-500">
+                <h4 class="text-xl font-bold text-blue-600 mb-2">Tambah / Isi Freon</h4>
+                <p class="text-gray-600">Pengecekan tekanan freon dan pengisian ulang (R32, R410a, R22) untuk mengembalikan suhu sejuk ruangan secara instan.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow hover:shadow-xl transition border-t-4 border-blue-500">
+                <h4 class="text-xl font-bold text-blue-600 mb-2">Bongkar Pasang & Perbaikan</h4>
+                <p class="text-gray-600">Mengatasi AC bocor, berisik, modul eror, hingga layanan pemindahan unit AC ke lokasi atau ruangan baru.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bagian Harga -->
+    <section class="bg-gray-100 py-16">
+        <div class="container mx-auto px-4">
+            <h3 class="text-3xl font-bold text-center text-gray-800 mb-10">Estimasi Harga Jasa</h3>
+            <div class="max-w-2xl mx-auto bg-white rounded-lg shadow overflow-hidden">
+                <table class="w-full text-left border-collapse">
+                    <thead>
+                        <tr class="bg-blue-600 text-white">
+                            <th class="p-4 border-b font-semibold">Jenis Layanan</th>
+                            <th class="p-4 border-b font-semibold">Estimasi Biaya</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="hover:bg-gray-50">
+                            <td class="p-4 border-b">Cuci AC (0.5 - 1 PK)</td>
+                            <td class="p-4 border-b font-bold text-blue-600">Rp 75.000</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="p-4 border-b">Tambah Freon R32 / R410a</td>
+                            <td class="p-4 border-b font-bold text-blue-600">Rp 150.000</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="p-4 border-b">Isi Freon Full (Kosong)</td>
+                            <td class="p-4 border-b font-bold text-blue-600">Rp 250.000</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="p-4 border-b">Bongkar Pasang AC</td>
+                            <td class="p-4 border-b font-bold text-blue-600">Rp 350.000</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="p-4">Pengecekan / Survey</td>
+                            <td class="p-4 font-bold text-blue-600">Gratis <span class="text-sm font-normal text-gray-500">(Jika jadi perbaikan)</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="text-center text-sm text-gray-500 mt-4">*Harga dapat berubah sesuai tingkat kerumitan kerusakan dan jarak lokasi.</p>
+        </div>
+    </section>
+
+    <!-- Bagian Kontak & Footer -->
+    <footer id="kontak" class="bg-gray-900 text-gray-300 py-12 text-center">
+        <div class="container mx-auto px-4">
+            <h3 class="text-2xl font-bold text-white mb-4">Kembalikan Kesejukan Ruangan Anda Hari Ini</h3>
+            <p class="mb-6 max-w-lg mx-auto">Jangan biarkan AC tidak dingin mengganggu aktivitas Anda. Hubungi tim teknisi kami yang siap datang langsung ke lokasi Anda.</p>
+            <p class="text-xl font-bold text-white mb-2">📞 WhatsApp: 0812-3456-7890</p>
+            <p class="text-sm mb-8">📍 Cakupan Layanan: Bekasi, Jakarta, dan sekitarnya</p>
+            
+            <a href="https://wa.me/6281234567890" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded transition">Hubungi Teknisi</a>
+            
+            <div class="mt-10 border-t border-gray-700 pt-6 text-sm">
+                &copy; 2026 Penawaran Jasa Service AC. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
