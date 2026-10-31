@@ -1,7 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://superc0ld.com/sitemap.xml
-
-# Blokir file internal
-Disallow: /*.json$
-Disallow: /private/
