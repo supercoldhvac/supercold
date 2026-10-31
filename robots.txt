@@ -1,7 +1,13 @@
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: WhatsApp
+Allow: /
+
 User-agent: *
 Allow: /
-Sitemap: https://supercold.biz.id/sitemap.xml
 
-# Blokir file internal
-Disallow: /*.json$
-Disallow: /private/
+Sitemap: https://supercold.biz.id/sitemap.xml
