@@ -210,7 +210,18 @@ footer{padding:.5rem 1.25rem 6rem;text-align:center;font-size:14px;color:var(--m
   border-radius:999px;background:var(--card);color:var(--foreground);font-size:20px;cursor:pointer}
 .lb .prev{left:.75rem}.lb .next{right:.75rem}
 [hidden]{display:none!important}
-</style>
+
+    /* Harga Cuci AC - Versi Terbaru PALING LARIS */
+    .price-table table { width:100%; border-collapse:collapse; }
+    .price-table tr.row-laris { background:#eaf6ff; }
+    .price-table tr.row-laris td { border-top:2px solid #0ea5e9; border-bottom:2px solid #0ea5e9; }
+    .badge-laris { display:inline-block; background:#16a34a; color:#fff; font-size:11px; font-weight:800; padding:3px 8px; border-radius:999px; margin-left:8px; vertical-align:middle; letter-spacing:.5px; }
+    .price-laris { font-size:19px; font-weight:800; color:#0a2540; }
+    .best-seller { display:block; font-size:11px; color:#f59e0b; font-weight:700; margin-top:2px; }
+    .btn-wa-harga { display:inline-flex; align-items:center; gap:8px; background:#25D366; color:#fff; font-weight:800; padding:13px 22px; border-radius:999px; text-decoration:none; margin-top:18px; box-shadow:0 8px 20px rgba(37,211,102,.35); }
+    .btn-wa-harga:hover { filter:brightness(.95); }
+
+    </style>
   
 <!-- Google tag (gtag.js) GA4 Super Cold -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-RN8M6MZEEB"></script>
@@ -244,7 +255,8 @@ footer{padding:.5rem 1.25rem 6rem;text-align:center;font-size:14px;color:var(--m
           <a class="nav-link" href="#harga">Harga</a>
           <a class="nav-link" href="#galeri">Galeri</a>
           <a class="nav-link" href="#kontak">Kontak</a>
-          <a class="btn btn-wa" href="#booking" style="padding:.55rem 1rem;font-size:14px">Booking</a>
+          <a class="btn" href="blog/index.html" style="padding:.55rem 1rem;font-size:14px;background:#fff;color:#0a2540;border:2px solid #0ea5e9;font-weight:800">📚 Artikel</a>
+          <a class="btn btn-wa" href="#booking" style="padding:.55rem 1rem;font-size:14px">Layanan</a>
         </nav>
       </div>
     </header>
@@ -257,7 +269,7 @@ footer{padding:.5rem 1.25rem 6rem;text-align:center;font-size:14px;color:var(--m
             <h1>AC tidak dingin? Teknisi BNSP datang ke rumah Anda.</h1>
             <p class="lead">Cuci AC, isi freon, bongkar pasang, perbaikan bocor &amp; tidak dingin — sampai kulkas, mesin cuci, dan kelistrikan rumah. Bergaransi kerja.</p>
             <div class="hero-cta">
-              <a class="btn btn-wa" href="#booking">Booking Sekarang</a>
+              <a class="btn btn-wa" href="#booking">Pesan Teknisi Sekarang</a>
               <a class="btn btn-outline-deep" href="#galeri">Lihat Hasil Kerja</a>
             </div>
           </div>
@@ -274,32 +286,34 @@ footer{padding:.5rem 1.25rem 6rem;text-align:center;font-size:14px;color:var(--m
         </div>
       </section>
 
-      <section class="container perks">
-        <div class="perk"><h3>Teknisi bersertifikat BNSP</h3><p>Kompeten &amp; terlatih, termasuk sistem VRV dan inverter.</p></div>
-        <div class="perk"><h3>Bergaransi kerja</h3><p>Masalah kembali setelah dikerjakan? Kami cek ulang.</p></div>
-        <div class="perk"><h3>Datang sesuai jadwal</h3><p>Pilih jam kunjungan, kami konfirmasi via WhatsApp.</p></div>
-        <div class="perk"><h3>Harga jelas di depan</h3><p>Estimasi biaya cuci AC langsung terlihat saat booking.</p></div>
+      <section class="container" id="layanan" style="padding-bottom:0"><h2 class="sec-title" style="text-align:center">Layanan Kami – Apa Yang Bisa Kami Perbaiki Hari Ini?</h2></section>
+      <section class="container perks" style="padding-top:1rem">
+        <div class="perk"><h3>Teknisi Bersertifikat BNSP – Bukan Tukang Abal-Abal</h3><p>Kompeten &amp; terlatih, termasuk sistem VRV dan inverter.</p></div>
+        <div class="perk"><h3>Bergaransi 30 Hari – Kalau Tidak Dingin, Kami Balik Gratis!</h3><p>Masalah kembali setelah dikerjakan? Kami cek ulang.</p></div>
+        <div class="perk"><h3>Datang Sesuai Jadwal – Tidak Bikin Kamu Nunggu Seharian</h3><p>Pilih jam kunjungan, kami konfirmasi via WhatsApp.</p></div>
+        <div class="perk"><h3>Harga Jelas di Depan – Estimasi Muncul Sebelum Kamu Pesan</h3><p>Estimasi biaya cuci AC langsung terlihat saat booking.</p></div>
       </section>
 
       <section id="harga" class="container" style="padding-bottom:3.5rem">
-        <h2 class="sec-title">Harga cuci AC</h2>
-        <p class="sec-sub">Per unit. Belum termasuk isi freon atau perbaikan tambahan bila diperlukan.</p>
+        <h2 class="sec-title">Harga Cuci AC – Jelas di Depan, Tanpa Biaya Siluman</h2>
+        
         <div class="price-table">
           <table>
             <thead><tr><th>Jenis AC</th><th>0,5 – 1 PK</th><th>1,5 – 2 PK</th></tr></thead>
             <tbody>
-              <tr><td>Standar</td><td>Rp85.000</td><td>Rp110.000</td></tr>
+              <tr class="row-laris"><td><strong>Standar</strong> <span class="badge-laris">PALING LARIS</span></td><td><span class="price-laris">Rp85.000</span><span class="best-seller">⭐ Best Seller</span></td><td>Rp110.000</td></tr>
               <tr><td>Inverter</td><td>Rp125.000</td><td>Rp150.000</td></tr>
             </tbody>
           </table>
         </div>
-        <p class="sec-sub" style="margin-top:1rem">Pasang AC <b>0,5 – 1 PK = Rp450.000</b> / unit & <b>1,5 – 2 PK = Rp550.000</b> / unit – Bongkar Pasang AC <b>0,5 – 1 PK = Rp550.000</b> / unit & <b>1,5 – 2 PK = Rp600.000</b> / unit. Harga sudah termasuk vakum + cek freon. Pipa tambahan dihitung per meter.</p>
+        <div style="text-align:center"><a class="btn-wa-harga" href="https://wa.me/6281311922204?text=Halo%20Super%20Cold%2C%20saya%20mau%20pesan%20Cuci%20AC%20Rp85.000">📲 Pesan Cuci AC Rp85.000 - WA 0813-1192-2204</a></div>
+        
       </section>
 
       <section id="galeri" class="gallery">
         <div class="container">
-          <h2 class="sec-title">Dokumentasi pekerjaan teknisi</h2>
-          <p class="sec-sub">Dari unit VRV, diagnosa PCB Daikin, AC cassette, hingga kerja di ketinggian dengan perlengkapan keselamatan lengkap — termasuk uji kompetensi refrigerasi dan ajang Indonesia Skills Competition 2026 di BBPVP Bekasi.</p>
+          <h2 class="sec-title">Bukti Kerja Nyata Kami – Bukan Cuma Janji</h2>
+          
                                         <div class="shots" id="shots">
         <button type="button" class="shot" data-i="0"><img src="images/01-vrv-outdoor-nitrogen-test.jpg" alt="Unit outdoor VRV dibuka untuk pengecekan nitrogen" loading="lazy"></button>
         <button type="button" class="shot" data-i="1"><img src="images/02-pcb-daikin-vrv-diagnosa.jpg" alt="Pengecekan PCB unit outdoor Daikin VRV" loading="lazy"></button>
@@ -320,8 +334,10 @@ footer{padding:.5rem 1.25rem 6rem;text-align:center;font-size:14px;color:var(--m
 
       <section id="booking" class="booking">
         <div class="container">
-          <h2 class="sec-title">Booking via WhatsApp</h2>
-          <p class="sec-sub">Pilih layanan, isi data singkat, lalu pesan rapi langsung terbuka di WhatsApp kami.</p>
+          
+
+      <h2 class="sec-title">Pesan Teknisi Hari Ini – Datang, Dingin, Beres!</h2>
+          
           <p class="steps" id="steps">Langkah 1 dari 2 · Pilih layanan</p>
           <div class="svcs" id="svcs"></div>
 
